@@ -14,8 +14,8 @@ WIFI_PASSWORD = ""
 # Thông tin Adafruit IO mới
 MQTT_BROKER = "io.adafruit.com"
 MQTT_PORT = 1883
-MQTT_USER = "doichico2012"
-MQTT_PASSWORD = "YOUR_ADAFRUIT_IO_KEY"
+MQTT_USER = os.getenv("MQTT_USER")
+MQTT_PASSWORD = os.getenv("MQTT_PASSWORD")
 MQTT_TOPIC = "doichico2012/Feeds/temperature"
 CLIENT_ID = "ESP32_DHT22_Sender"
 
